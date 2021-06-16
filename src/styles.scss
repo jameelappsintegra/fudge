@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+/*https://xd.adobe.com/view/9743f916-ba8e-4e17-87b5-e3975c8a545b-c210/*/
+:root {
+  --primary: #003b14d9;
+  --text-primary: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Helvatica";
+  src: url("./assets/fonts/Helvetica.ttf") format("truetype");
+}
+body {
+  font-family: Helvetica, Sans-Serif;
+  color: var(--text-primary);
+}

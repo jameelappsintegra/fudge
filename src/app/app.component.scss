@@ -1,0 +1,45 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("../assets/img/dan-asaki-0uLVXFz6obg-unsplash@2x.png");
+  background-size: cover;
+  position: relative;
+  .logo-container {
+    background: var(--primary);
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(#4e7250, #5dd963);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+
+    img {
+      width: 159px;
+      height: 52px;
+      z-index: 9999;
+      position: relative;
+      opacity: 1;
+    }
+  }
+  .icon {
+    cursor: pointer;
+    position: absolute;
+    bottom: 80px;
+    animation: bounce 2s ease-out infinite;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-10px);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
