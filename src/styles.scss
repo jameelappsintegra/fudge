@@ -1,7 +1,8 @@
 /*https://xd.adobe.com/view/9743f916-ba8e-4e17-87b5-e3975c8a545b-c210/*/
 :root {
   --primary: #003b14d9;
-  --text-primary: #fff;
+  --primary-text: #fff;
+  --secondary-text:#B2B2B2;
 }
 * {
   margin: 0;
@@ -14,5 +15,22 @@
 }
 body {
   font-family: Helvetica, Sans-Serif;
-  color: var(--text-primary);
+  color: var(--primary-text);
+}
+.btn{
+    background: transparent;
+    color: #fff;
+    border-radius: 4px;
+}
+.btn-primary{
+
+}
+.btn-outline{
+    border: 1px solid;
+}
+.btn-lg{
+    padding: 1rem 2rem;
+}
+.secondary-text{
+    color: var(--secondary-text);
 }
