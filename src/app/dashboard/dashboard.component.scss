@@ -16,21 +16,21 @@
         a {
           color: var(--primary-text);
           text-decoration: none;
-          padding: 20px 25px;
+          padding: 10%;
           display: block;
           font-family: Helvatica-light;
           position: relative;
           i {
             font-size: 1.3rem;
-            padding: 0 20px 0 0;
+            padding: 0 8px 0 0;
           }
           &:hover {
             background: #ffffff2e;
             border-radius: 10px;
-            &::after {
-              content: "&#xf0da";
-              position: absolute;
-            }
+            // &::after {
+            //   content: "&#xf0da";
+            //   position: absolute;
+            // }
           }
         }
       }
@@ -38,6 +38,6 @@
   }
   .main {
     background: #fff;
-    padding: 40px 50px;
+    padding: 30px;
   }
 }
