@@ -131,15 +131,15 @@
       <h3 class="sub-heading">Industry News</h3>
       <div class="card-body">
         <div class="news-article">
-          <div class="list">
-            <span class="time-stamp">21 May 2021</span>
-            <h6>The standard Lorem Ipsum passage, used since the 1500s</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-              et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex
-              ea commodo consequat.</p>
-            <a href="">Read full article</a>
+          <div *ngIf="contentArray.length > 0">
+            <div class="list" *ngFor="let content of returnedArray">
+              <span class="time-stamp">21 May 2021</span>
+              <h6>{{content.title}}</h6>
+              <p>{{content.body}}</p>
+              <a href="">Read full article</a>
+            </div>
+            <pagination [totalItems]="contentArray.length" [itemsPerPage]="2" nextText="&rsaquo;" firstText="&laquo;"
+              lastText="&raquo;" (pageChanged)="pageChanged($event)"></pagination>
           </div>
         </div>
       </div>
@@ -148,18 +148,17 @@
   <div class="top-comments card">
     <h3 class="sub-heading">Top Comments</h3>
     <div class="card-body">
-      <div class="list">
+      <div class="list" *ngFor="let item of comments">
         <div class="img-block">
           <img src="../../assets/img/458372_1.jpg" class="avatar" alt="comment-user">
         </div>
         <div>
-          <h6>Jack Sparrows</h6>
+          <h6>{{item.name}}</h6>
           <div class="time-stamp">
             2 hours ago
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
+            {{item.body}}
           </p>
         </div>
       </div>
@@ -169,12 +168,12 @@
     <h3 class="sub-heading">Users</h3>
     <div class="card-body">
       <div class="users">
-        <div class="user-list">
+        <div class="user-list" *ngFor="let item of users ">
           <div class="img-block">
             <img src="../../assets/img/458372_1.jpg" class="avatar" alt="comment-user">
           </div>
           <div>
-            <h6>Don Corleone</h6>
+            <h6>{{item.username}}</h6>
             <div class="status">
               <div class="online">
                 Online
