@@ -84,6 +84,7 @@ li {
   }
   .card-footer {
     font-size: 0.5rem;
+    background: #fff;
   }
 }
 .good {
@@ -143,18 +144,19 @@ li {
 /* Dashboard */
 .dashboard {
   display: grid;
-  grid-template-columns: 20% 1fr;
+  grid-template-columns: 18% 1fr;
   background: url("./assets/img/dan-asaki-0uLVXFz6obg-unsplash@2x.png");
   background-size: cover;
   .filter {
     display: flex;
   }
   .side-nav {
-    height: 100vh;
     background-image: radial-gradient(#003b14d9, #023614);
-    padding: 30px;
+    padding: 11%;
     .logo {
-      margin: 0 0 30px 0;
+      margin: 0 0 130px 0;
+      display: flex;
+      justify-content: center;
     }
     ul {
       li {
@@ -162,7 +164,7 @@ li {
         a {
           color: var(--primary-text);
           text-decoration: none;
-          padding: 10%;
+          padding: 9%;
           display: block;
           font-family: Helvatica-light;
           position: relative;
@@ -193,7 +195,7 @@ li {
   display: grid;
   grid-template-columns: 40% 1fr 25%;
   margin: 30px 0;
-  grid-gap: 10px;
+  grid-gap: 20px;
   .quick-stats {
     grid-column: 1 / span 1;
   }
@@ -220,13 +222,14 @@ li {
 /*quicck-stat*/
 .quick-stat-grid {
   display: grid;
-  grid-template-columns: 50% 20% 20%;
+  grid-template-columns: 1fr 27% 27%;
   grid-gap: 2%;
   h6 {
     color: #383838;
   }
   .card {
     box-shadow: 0px 0px 40px #0b0b0b24;
+    border: 0;
   }
   .card-body {
     display: flex;
@@ -279,6 +282,9 @@ li {
 
 /*financial health*/
 .financial-health {
+  .card {
+    border: 0;
+  }
   .footer-text {
     display: flex;
   }
@@ -319,3 +325,26 @@ li {
     }
   }
 }
+
+/*my goal*/
+.my-goal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(179px, 1fr));
+  grid-gap: 20px;
+  .card {
+    border: 0;
+    text-align: center;
+  }
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    span {
+      font-size: 0.7rem;
+      color: #ccd;
+    }
+    h6 {
+      font-size: 0.7rem;
+    }
+  }
+}
+@import "media.scss";

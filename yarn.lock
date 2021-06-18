@@ -1660,6 +1660,13 @@ alphanum-sort@^1.0.2:
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
+angular-svg-round-progressbar@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/angular-svg-round-progressbar/-/angular-svg-round-progressbar-7.0.0.tgz#29e5758e90eac4f1dddccadcddb3ce0c97d20751"
+  integrity sha512-CUmopOLYizI+aQLb/YTi8nVTlBl+OEdLt4jndk9ROpX34e1kDubsaNbjfVGqjtUgm1fXdgrF7Xup+8bAAtQGtQ==
+  dependencies:
+    tslib "^2.1.0"
+
 ansi-colors@4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-4.1.1.tgz#cbb9ae256bf750af1eab344f229aa27fe94ba348"
@@ -5041,6 +5048,13 @@ neo-async@^2.6.2:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
+
+ng-circle-progress@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/ng-circle-progress/-/ng-circle-progress-1.6.0.tgz#e153d8e207946f0963636a4e0f8c02c3114ed3c3"
+  integrity sha512-HD7Uthog/QjRBFKrrnbOrm313CrkkWiTxENR7PjUy9lSUkuys5HdT0+E8UiHDk8VLSxC/pMmrx3eyYLhNq7EnQ==
+  dependencies:
+    tslib "^2.0.0"
 
 ngx-bootstrap@^6.2.0:
   version "6.2.0"

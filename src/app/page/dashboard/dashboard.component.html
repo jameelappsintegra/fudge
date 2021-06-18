@@ -41,7 +41,7 @@
 <div class="fudge-dashboard">
   <div class="quick-stats">
     <h3 class="sub-heading">Quick Stats</h3>
-    <div class="d-flex quick-stat-grid">
+    <div class="quick-stat-grid">
       <div class="card">
         <div class="card-body">
           <h6>£563,350</h6>
@@ -50,14 +50,14 @@
       </div>
       <div class="card">
         <div class="card-body">
-          <h6>£563,350</h6>
-          <p>Your net worth as of today</p>
+          <h6>12,350</h6>
+          <p>Monthy Cashflow</p>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
-          <h6>£563,350</h6>
-          <p>Your net worth as of today</p>
+          <h6>161,350</h6>
+          <p>Overall Liabilities</p>
         </div>
       </div>
     </div>
@@ -67,7 +67,7 @@
       <h3 class="sub-heading">My Financial Health</h3>
       <button class="btn btn-secondary btn-dash">View Financial Health</button>
     </div>
-    <div class="card">
+    <div class="card box-shadow">
       <div class="card-body">
 
       </div>
@@ -86,6 +86,44 @@
     <div class="d-flex align-items-center justify-content-between">
       <h3 class="sub-heading">My Goals</h3>
       <button class="btn btn-secondary btn-dash">View all Goals</button>
+    </div>
+    <div class="my-goal-grid">
+      <div class="card box-shadow">
+        <div class="card-body">
+          <h6>Retirement</h6>
+          <circle-progress [percent]="65" [radius]="100" [outerStrokeWidth]="1" [innerStrokeWidth]="1"
+            [animation]="true" [animationDuration]="300" [responsive]="true">
+          </circle-progress>
+        </div>
+        <div class="card-footer">
+          <h6>£354,878</h6>
+          <span>£125,987</span>
+        </div>
+      </div>
+      <div class="card box-shadow">
+        <div class="card-body">
+          <h6>Vacation Home</h6>
+          <circle-progress [percent]="78" [radius]="100" [outerStrokeWidth]="1" [innerStrokeWidth]="1"
+            [animation]="true" [animationDuration]="300" [responsive]="true">
+          </circle-progress>
+        </div>
+        <div class="card-footer">
+          <h6>£354,878</h6>
+          <span>£125,987</span>
+        </div>
+      </div>
+      <div class="card box-shadow">
+        <div class="card-body">
+          <h6>Travel</h6>
+          <circle-progress [percent]="46" [radius]="100" [outerStrokeWidth]="1" [innerStrokeWidth]="1"
+            [animation]="true" [animationDuration]="300" [responsive]="true">
+          </circle-progress>
+        </div>
+        <div class="card-footer">
+          <h6>£354,878</h6>
+          <span>£125,987</span>
+        </div>
+      </div>
     </div>
   </div>
   <div class="industy-news">

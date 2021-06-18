@@ -8,6 +8,7 @@ import { DashboardComponent } from './page/dashboard/dashboard.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PageComponent } from './page/page.component';
 import { AdvisorComponent } from './page/advisor/advisor.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,24 @@ import { AdvisorComponent } from './page/advisor/advisor.component';
     PageComponent,
     AdvisorComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    NgCircleProgressModule.forRoot({
+      radius: 100,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      animationDuration: 300,
+      backgroundPadding: 10,
+      space: -2,
+      outerStrokeColor: '#C7E596',
+      innerStrokeColor: '#e7e8ea',
+      animateTitle: false,
+      showUnits: true,
+      clockwise: true,
+    }),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
