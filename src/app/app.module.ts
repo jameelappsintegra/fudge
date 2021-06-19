@@ -11,6 +11,8 @@ import { AdvisorComponent } from './page/advisor/advisor.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HttpClientModule } from '@angular/common/http';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { MyPerformanceComponent } from './page/dashboard/my-performance/my-performance.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
     DashboardComponent,
     PageComponent,
     AdvisorComponent,
+    MyPerformanceComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
       showUnits: true,
       clockwise: true,
     }),
+    ChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

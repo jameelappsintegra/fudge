@@ -76,15 +76,13 @@
       </div>
       <div class="card-footer">
         <span class="footer-text">
-          Your financial health status is <div class="good">GOOD</div>. However there’s still room for
-          improvement. <a>See how you can improve</a>
+          Your financial health status is <div class="good"> GOOD</div>. However there’s still room for
+          improvement. <a href="">See how you can improve</a>
         </span>
       </div>
     </div>
   </div>
-  <div class="my-performance">
-    <h3 class="sub-heading">My Performance</h3>
-  </div>
+  <app-my-performance></app-my-performance>
   <div class="my-goals">
     <div class="d-flex align-items-center justify-content-between">
       <h3 class="sub-heading">My Goals</h3>
@@ -157,7 +155,7 @@
             2 hours ago
           </div>
           <p>
-            {{item.body}}
+            {{item.body.slice(0,100)}}
           </p>
         </div>
       </div>
