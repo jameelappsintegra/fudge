@@ -192,10 +192,14 @@ li {
           &.active {
             background: #ffffff2e;
             border-radius: 10px;
-            // &::after {
-            //   content: "&#xf0da";
-            //   position: absolute;
-            // }
+            &::after {
+              font-family: Line Awesome Free;
+              content: "\f0da";
+              font-weight: normal;
+              font-style: normal;
+              margin: 0px 0px 0px 10px;
+              text-decoration: none;
+            }
           }
         }
       }
