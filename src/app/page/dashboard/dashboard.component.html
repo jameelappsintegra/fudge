@@ -69,7 +69,10 @@
     </div>
     <div class="card box-shadow">
       <div class="card-body">
-
+        <div class="progress-bar" style="left: 88%;background: green;" role="progressbar" aria-valuenow="25"
+          aria-valuemin="0" aria-valuemax="100">88%</div>
+        <div class="progress">
+        </div>
       </div>
       <div class="card-footer">
         <span class="footer-text">
@@ -126,22 +129,18 @@
       </div>
     </div>
   </div>
-  <div class="industy-news">
-    <div class="card">
-      <h3 class="sub-heading">Industry News</h3>
-      <div class="card-body">
-        <div class="news-article">
-          <div *ngIf="contentArray.length > 0">
-            <div class="list" *ngFor="let content of returnedArray">
-              <span class="time-stamp">21 May 2021</span>
-              <h6>{{content.title}}</h6>
-              <p>{{content.body}}</p>
-              <a href="">Read full article</a>
-            </div>
-            <pagination [totalItems]="contentArray.length" [itemsPerPage]="2" nextText="&rsaquo;" firstText="&laquo;"
-              lastText="&raquo;" (pageChanged)="pageChanged($event)"></pagination>
-          </div>
+  <div class="industy-news card">
+    <h3 class="sub-heading">Industry News</h3>
+    <div class="card-body">
+      <div class="news-article" *ngIf="contentArray.length > 0">
+        <div class="list" *ngFor="let content of returnedArray">
+          <span class="time-stamp">21 May 2021</span>
+          <h6>{{content.title}}</h6>
+          <p>{{content.body}}</p>
+          <a href="">Read full article</a>
         </div>
+        <pagination [totalItems]="contentArray.length" [itemsPerPage]="2" nextText="&rsaquo;" firstText="&laquo;"
+          lastText="&raquo;" (pageChanged)="pageChanged($event)"></pagination>
       </div>
     </div>
   </div>

@@ -5,7 +5,7 @@
   --primary: #003b14d9;
   --primary-text: #fff;
   --secondary-text: #b2b2b2;
-  --border-radius: 4px;
+  --border-radius: 10px;
 }
 * {
   margin: 0;
@@ -242,6 +242,14 @@ li {
 }
 
 // News & top comments
+.news-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .list {
+    margin: 0 0 15px 0;
+  }
+}
 .news-article,
 .top-comments {
   .time-stamp {
@@ -284,6 +292,27 @@ li {
 .financial-health {
   .card {
     border: 0;
+  }
+  .card-body {
+    padding: 15px;
+    min-height: 60px;
+  }
+  .progress-bar {
+    width: 20px;
+    border-radius: 4px 4px 0 0;
+    position: absolute;
+    font-size: 0.7rem;
+    height: 25px;
+  }
+  .progress {
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    border-radius: 0;
+    height: 2px;
+    margin: 23px 0 0;
+    background-image: linear-gradient(to right, red, yellow, green);
   }
   .footer-text {
     display: flex;
@@ -330,7 +359,7 @@ li {
 /*my goal*/
 .my-goal-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(179px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   grid-gap: 20px;
   .card {
     border: 0;

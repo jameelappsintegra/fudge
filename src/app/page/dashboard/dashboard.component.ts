@@ -19,7 +19,7 @@ export class DashboardComponent implements OnInit {
   getNews() {
     this.commonApiService.getNews().subscribe((data: any) => {
       this.contentArray = data;
-      this.returnedArray = this.contentArray.slice(0, 2);
+      this.returnedArray = this.contentArray.slice(0, 4);
       console.log('data', data);
     });
   }
